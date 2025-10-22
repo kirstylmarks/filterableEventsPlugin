@@ -36,6 +36,7 @@ function em_create_event_registrations_table() {
     }
 }
 
+
 add_action('wp_enqueue_scripts', 'em_enqueue_scripts');
 function em_enqueue_scripts() {
     wp_enqueue_script('jquery');

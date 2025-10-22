@@ -3,7 +3,6 @@ jQuery(document).ready(function($) {
     // 🔹 Event Filter
     $('#event-filter').on('change', function() {
         let filterVal = $(this).val();
-
         $.ajax({
             url: ajaxSearch.ajax_url,
             type: 'POST',
