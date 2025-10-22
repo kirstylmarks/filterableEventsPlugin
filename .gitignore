@@ -1,0 +1,17 @@
+# Ignore everything
+*
+
+# Allow only wp-content/plugins/km-events-cpt
+!wp-content/
+wp-content/*
+!wp-content/plugins/
+wp-content/plugins/*
+!wp-content/plugins/km-events-cpt/
+!wp-content/plugins/km-events-cpt/**
+
+# Keep these files if needed
+!.gitignore
+!composer.json
+!composer.lock
+!README.md
+!readme.md
