@@ -1,17 +1,23 @@
-# Ignore everything
-*
+# Ignore everything in the repository
+/*
 
-# Allow only wp-content/plugins/km-events-cpt
+# But keep these top-level project files
+!.gitignore
+!README.md
+!readme.md
+!composer.json
+!composer.lock
+
+# Allow wp-content directory (but nothing inside yet)
 !wp-content/
+
+# Ignore everything inside wp-content
 wp-content/*
+
+# Allow plugins folder
 !wp-content/plugins/
+
+# Ignore all plugins except your own
 wp-content/plugins/*
 !wp-content/plugins/km-events-cpt/
 !wp-content/plugins/km-events-cpt/**
-
-# Keep these files if needed
-!.gitignore
-!composer.json
-!composer.lock
-!README.md
-!readme.md
